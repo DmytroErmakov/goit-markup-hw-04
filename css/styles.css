@@ -156,7 +156,33 @@ body {
     background-color: var(--first-background-color);
 }
 
+
+.direction-button {
+    padding: 0;
+    display: block;
+    height: 112px;
+    width: 264px;
+    border: none;
+    background-color: var(--second-background-color);
+    border-radius: 4px;
+    
+    
+}
+
+.direction-svg {
+    display: block;
+    width: 100%;
+}
+
+.direction-svg-icon {
+   
+    color: var(--main-color); 
+}
+
+
+
 .direction-title {
+    padding: 0;
     display: none;
     font-weight: 500;
     font-size: 20px;
@@ -176,6 +202,7 @@ body {
 }
 
 .item-title {
+    margin-top: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -230,7 +257,7 @@ body {
 
 }
 
-.team-title {
+.team-title, .customers-title {
     margin-bottom: 72px;
     font-weight: 500;
     font-size: 36px;
@@ -269,7 +296,6 @@ body {
 
 .team-list-item-text {
     margin-top: 8px;
-    padding-bottom: 32px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -277,6 +303,83 @@ body {
     letter-spacing: 0.02em;
     color: var(--seconary-color);
 }
+
+.social {
+    
+}
+
+.social-list {
+    margin-top: 8px;
+    margin-left: 16px;
+    padding-bottom: 32px;
+    list-style: none;
+    border-radius: 50%;
+    display: flex;
+    gap: 24px;
+}
+
+.social-list-item {
+    
+
+}
+
+.social-list-item-link {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--third-color);
+    text-align: center;
+   
+}
+
+.social-list-item-link-svg{
+    
+    
+    
+}
+
+.icon-instagram {
+
+}
+
+.icon-twitter {
+
+}
+
+.icon-facebook {
+
+}
+
+.icon-linkedin {
+
+}
+
+/* Customers */
+
+.customers-list {
+    margin-top: 8px;
+    margin-left: 16px;
+    padding-bottom: 32px;
+    list-style: none;
+    border-radius: 50%;
+    display: flex;
+    gap: 24px;
+}
+.customers-list-item {
+    
+
+}
+.customers-list-item-link {
+    width: 168px;
+    height: 88px;
+    display: block;
+    background-color: var(--third-color);
+    text-align: center;
+   
+}
+
+
 
 /* footer */
 
