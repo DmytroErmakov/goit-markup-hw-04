@@ -6,6 +6,8 @@
     --third-color: #4D5AE5;
     --fouth-color: #E7E9FC;
     --fifth-color: #404BBF;
+    --sixth-color: #8E8F99;
+    --eight-color: #31D0AA;
    }
 
 *,
@@ -105,6 +107,12 @@ body {
     padding: 192px 0;
     text-align: center;
     background-color: var(--main-color);
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/people-office.jpg);
+    background-size: cover;
 }
 
 .hero-title {
@@ -114,9 +122,8 @@ body {
     font-weight: 500;
     font-size: 56px;
     line-height: 1.1;
-    
     letter-spacing: 0.02em;
-    color: var(--first-background-color);   
+    color: var(--first-background-color);
 }
 
 .hero-btn {
@@ -247,7 +254,7 @@ body {
 
 .team {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 110px;
     background-color: var(--second-background-color);
 }
 
@@ -320,27 +327,33 @@ body {
 
 .social-list-item {
     
+    
 
 }
 
 .social-list-item-link {
     width: 40px;
     height: 40px;
-    display: block;
+    display: flex;
     border-radius: 50%;
     background-color: var(--third-color);
-    text-align: center;
-   
+    justify-content: center;
+    align-items: center;
 }
+
+.social-list-item-link:hover {
+    background-color: var(--fifth-color);
+}
+
 
 .social-list-item-link-svg{
     
-    
+   
     
 }
 
 .icon-instagram {
-
+   
 }
 
 .icon-twitter {
@@ -357,28 +370,44 @@ body {
 
 /* Customers */
 
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+
+}
+
+
 .customers-list {
-    margin-top: 8px;
-    margin-left: 16px;
-    padding-bottom: 32px;
     list-style: none;
-    border-radius: 50%;
     display: flex;
     gap: 24px;
 }
 .customers-list-item {
+    /* border: 1px solid var(--sixth-color); */
     
 
 }
 .customers-list-item-link {
+    padding: 16px 32px;
     width: 168px;
     height: 88px;
     display: block;
-    background-color: var(--third-color);
-    text-align: center;
-   
+    background-color: transparent;
+    fill: var(--sixth-color);
+    border: 1px solid var(--sixth-color);
+    border-radius: 4px;
 }
 
+.customers-list-item-link:hover {
+    border: 1px solid var(--fifth-color);
+    fill: var(--fifth-color);
+}
+
+.customers-list-item-link-svg {
+   
+    
+    
+}   
 
 
 /* footer */
@@ -387,6 +416,12 @@ body {
     padding: 100px 0;
     background-color: var(--main-color);
 }
+
+
+.footer-block {
+    display: flex;
+}
+
 .footer-logo {
     margin-top: 100px;
     
@@ -414,6 +449,83 @@ body {
     letter-spacing: 0.02em;
     display: flex;
     color: var(--fouth-color);
+}
+
+.footer-social {
+    margin-left: 120px;
+    width: 208px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-social-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-background-color);
+}
+
+.footer-social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+   
+   
+}
+
+.footer-social-list-item {
+    
+   
+    
+}
+
+.footer-social-list-item-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: #F4F4FD;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icon {
+    
+    
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.icon-instaram {
+    fill: var(--second-background-color);
+}
+
+.icon-twitter {
+    background-size: 24px 20px;
+    background-image: url(../image/twitter.svg);
+}
+
+.icon-facebook {
+    background-size: 12px 24px;
+    background-image: url(../image/facebook.svg);
+}
+
+.icon-linkedin {
+    background-size: 24px 24px;
+    background-image: url(../image/linkedin.svg);
+}
+
+.footer-social-list-item-link:hover {
+    background-color: var(--eight-color);
 }
 
 /* filter */
