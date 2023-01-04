@@ -171,19 +171,22 @@ body {
   background-color: var(--first-background-color);
 }
 
-.direction-button {
+.direction-element {
   padding: 0;
-  display: block;
+  display: flex;
   height: 112px;
   width: 264px;
   border: none;
   background-color: var(--second-background-color);
   border-radius: 4px;
+  align-items: center;
 }
 
 .direction-svg {
+  
   display: block;
   width: 100%;
+  
 }
 
 .direction-svg-icon {
@@ -314,8 +317,7 @@ body {
 }
 
 .social-list {
-  margin-top: 8px;
-  margin-left: 16px;
+  margin-top: 8px;justify-content: center;
   padding-bottom: 32px;
   list-style: none;
   border-radius: 50%;
@@ -336,7 +338,7 @@ body {
   align-items: center;
 }
 
-.social-list-item-link:hover {
+.social-list-item-link:hover, .social-list-item-link:focus {
   background-color: var(--fifth-color);
 }
 
@@ -381,8 +383,7 @@ body {
   border-radius: 4px;
 }
 
-.customers-list-item-link:hover {
-  border: 1px solid var(--fifth-color);
+.customers-list-item-link:hover, .customers-list-item-link:focus {
   fill: var(--fifth-color);
 }
 
@@ -492,7 +493,7 @@ body {
   background-image: url(../image/linkedin.svg);
 }
 
-.footer-social-list-item-link:hover {
+.footer-social-list-item-link:hover, .footer-social-list-item-link:focus {
   background-color: var(--eight-color);
 }
 
@@ -554,6 +555,11 @@ body {
 .library-item {
 }
 
+.library-item:hover, .library-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+}
+
 .library-item-link {
 }
 
@@ -568,11 +574,6 @@ body {
   border: 0.5px solid var(--second-background-color);
   border-top: none;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.library-item-wrap:hover {
-  border: 0.5px solid #F4F4FD;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .library-item-type {
