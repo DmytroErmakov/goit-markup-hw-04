@@ -384,6 +384,7 @@ body {
 }
 
 .customers-list-item-link:hover, .customers-list-item-link:focus {
+  border: 1px solid var(--fifth-color);
   fill: var(--fifth-color);
 }
 
